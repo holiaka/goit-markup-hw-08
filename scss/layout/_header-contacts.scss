@@ -2,22 +2,40 @@
 .header-contact {
     @extend %reset-list;
 
-    display: flex;
-    gap: 50px;
-    align-self: center;
-    margin-left: auto;
+    @include mq(only_mob) {
+        display: none;
+    }
+
+    @include mq(tab) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-self: center;
+    }
+
+    @include mq(desk) {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        align-self: center;        
+    }   
 
     &__link {
-        @extend %reset-link;
-
-
         display: flex;
         align-items: center;
-        gap: 10px;
-
-        padding-top: 32px;
-        padding-bottom: 32px;        
+        @extend %reset-link;
         transition: color var(--animation-time);
+
+        @include mq(tab) {
+            display: flex;
+            gap: 8px;
+        }      
+
+        @include mq(desk) {
+            gap: 10px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }   
     }
 
     &__link:hover,
@@ -29,6 +47,3 @@
         fill: currentColor;
     }
 }
-
-
-

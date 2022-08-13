@@ -1,46 +1,46 @@
 /* Benefit section */
 
-.benefit{
-    @extend %section-padding;
+// .benefit{
+//     @extend %section-padding;
 
-    &__container{
-        @extend %container;
-    }
+//     &__container{
+//         @extend %container;
+//     }
 
-    &__list{
-        @extend %reset-list;
-    }
+//     &__list{
+//         @extend %reset-list;
+//     }
 
-    &__list .card-item {
-        --card-numbers: 4;
-    }
+//     &__list .card-item {
+//         --card-numbers: 4;
+//     }
 
-    &__img-space {
-        display: flex;
-        height: 120px;
-        border-radius: var(--radius);
-        align-items: center;
-        justify-content: center;
+//     &__img-space {
+//         display: flex;
+//         height: 120px;
+//         border-radius: var(--radius);
+//         align-items: center;
+//         justify-content: center;
 
-        background-color: var(--gray-background);
+//         background-color: var(--gray-background);
 
-        margin-bottom: 30px;
-    }
+//         margin-bottom: 30px;
+//     }
 
-    &__icon {
-        width: 70px;
-        height: 70px;
-    }
+//     &__icon {
+//         width: 70px;
+//         height: 70px;
+//     }
 
-    &__title {
-        margin-bottom: 10px;
+//     &__title {
+//         margin-bottom: 10px;
 
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        text-transform: uppercase;
-        color: var(--gray-black-text)
-    }
-}
+//         font-weight: 700;
+//         font-size: 14px;
+//         line-height: 1.14;
+//         text-transform: uppercase;
+//         color: var(--gray-black-text)
+//     }
+// }
 
 

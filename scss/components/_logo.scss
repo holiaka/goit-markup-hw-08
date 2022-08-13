@@ -1,14 +1,28 @@
 /* Logo */
 .logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
-
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     color: var(--blue-color);
     line-height: 1.19;
     text-decoration: none;
+
+    @include mq(only_mob) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }    
+
+    @include mq(tab) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    @include mq(desk){
+        padding-top: 24px;
+        padding-bottom: 25px;
+
+        font-size: 26px;
+    }
 
     &__text {
         color: var(--full-black-text);
@@ -20,22 +34,22 @@
         color: var(--blue-color);
     }
 
-    &--location {
-        display: inline-block;    
-        margin-bottom: 20px;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+//     &--location {
+//         display: inline-block;    
+//         margin-bottom: 20px;
+//         padding-top: 0;
+//         padding-bottom: 0;
+//     }
     
-    &__text--color {
-        color: var(--full-white-text);    
-        transition: color var(--animation-time);
-    }
+//     &__text--color {
+//         color: var(--full-white-text);    
+//         transition: color var(--animation-time);
+//     }
     
-    &__text--color:hover,
-    &__text--color:focus {
-        color: var(--blue-color);
-    }
+//     &__text--color:hover,
+//     &__text--color:focus {
+//         color: var(--blue-color);
+//     }
 }
 
 

@@ -3,24 +3,63 @@
 .header {
     border-bottom: 1px solid var(--gray-border-line);
 
-    font-weight: 500;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
 
     &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         @extend %container;
 
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
+        @include mq(mob) {
+            max-width: 480px;
+        }
+
+        @include mq(tab) {
+            max-width: 768px;
+        }
+        
+        @include mq(desk) {
+            max-width: 1200px;
+        }       
     }
 
     &__nav-panel {
         display: flex;
+        justify-content: center;
+
+        @include mq(tab) {
+            align-items: center;            
+            gap: 88px;
+        }
+        
+        @include mq(desk) {
+            gap: 93px;
+        }        
+    }
+
+    &__menu-btn {
+        display: flex;
+        justify-content: center;
         align-items: center;
-        gap: 93px;
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 40px;
+        
+        background-color: transparent;
+        border-color: transparent;
+        
+        @include mq(tab) {
+            display: none;
+        }        
+    }
+
+    &__menu-btn:hover,
+    &__menu-btn:focus {
+        fill: var(--blue-color);
+    }
+
+    &__menu-btn--standby {
+        color: currentColor;
+    }
 }
-}
-
-
-

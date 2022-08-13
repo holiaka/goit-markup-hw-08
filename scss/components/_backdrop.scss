@@ -2,26 +2,26 @@
 ************************
 Model windows and overlay 
 */
-.backdrop {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
+// .backdrop {
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     height: 100%;
+//     width: 100%;
 
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(3px) saturate(150%);
+//     background-color: rgba(0, 0, 0, 0.2);
+//     backdrop-filter: blur(3px) saturate(150%);
 
-    opacity: 1;
-    visibility: visible;
-    pointer-events: initial;
+//     opacity: 1;
+//     visibility: visible;
+//     pointer-events: initial;
 
-    transition: opacity var(--animation-time), visibility var(--animation-time);
+//     transition: opacity var(--animation-time), visibility var(--animation-time);
 
-    &.is-hidden {
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-    }
-}
+//     &.is-hidden {
+//         visibility: hidden;
+//         opacity: 0;
+//         pointer-events: none;
+//     }
+// }
 

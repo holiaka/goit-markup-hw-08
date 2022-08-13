@@ -1,29 +1,29 @@
 /* Footer part (divade) */
 
-.footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--black-color-background);
+// .footer {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     background-color: var(--black-color-background);
 
-    &__container {
-        @extend %container;
-    }
+//     &__container {
+//         @extend %container;
+//     }
 
-    &__divide {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: 70px;
-        align-items: baseline;
-        justify-content: space-between;
-    }
+//     &__divide {
+//         display: grid;
+//         grid-template-columns: repeat(2, auto);
+//         gap: 70px;
+//         align-items: baseline;
+//         justify-content: space-between;
+//     }
 
-    &__list {
-        @extend %reset-list;
-        display: flex;
-        gap: 70px;
-        align-items: baseline;
-    }
-}
+//     &__list {
+//         @extend %reset-list;
+//         display: flex;
+//         gap: 70px;
+//         align-items: baseline;
+//     }
+// }
 
 
 

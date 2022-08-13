@@ -1,44 +1,44 @@
 /* Colection parameters for filter bottons of Portfolio page */
-.filter {
-    @extend %reset-list;
+// .filter {
+//     @extend %reset-list;
 
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 50px;
+//     display: flex;
+//     justify-content: center;
+//     gap: 8px;
+//     margin-bottom: 50px;
 
-    /* Filtration buttons for portfolio */
-    &__button {
-        padding-top: 6px;
-        padding-right: 22px;
-        padding-bottom: 6px;
-        padding-left: 22px;
-        border-radius: var(--radius);
-        border-color: transparent;
+//     /* Filtration buttons for portfolio */
+//     &__button {
+//         padding-top: 6px;
+//         padding-right: 22px;
+//         padding-bottom: 6px;
+//         padding-left: 22px;
+//         border-radius: var(--radius);
+//         border-color: transparent;
 
-        font-family: inherit;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.62;
-        text-align: center;
-        letter-spacing: 0.03em;
-        text-decoration: none;
-        color: var(--gray-black-text);
+//         font-family: inherit;
+//         font-size: 16px;
+//         font-weight: 500;
+//         line-height: 1.62;
+//         text-align: center;
+//         letter-spacing: 0.03em;
+//         text-decoration: none;
+//         color: var(--gray-black-text);
 
-        background-color: var(--nearby-white);
+//         background-color: var(--nearby-white);
 
-        cursor: pointer;
+//         cursor: pointer;
 
-        transition: color var(--animation-time), background-color var(--animation-time), box-shadow var(--animation-time);
-    }
+//         transition: color var(--animation-time), background-color var(--animation-time), box-shadow var(--animation-time);
+//     }
 
-    &__button:hover,
-    &__button:focus,
-    &__button--active {
-        color: var(--full-white-text);
+//     &__button:hover,
+//     &__button:focus,
+//     &__button--active {
+//         color: var(--full-white-text);
 
-        background-color: var(--blue-color);
+//         background-color: var(--blue-color);
 
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
-}
+//         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+//     }
+// }
