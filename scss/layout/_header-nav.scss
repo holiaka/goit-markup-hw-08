@@ -1,0 +1,26 @@
+/* Navigation panel */
+
+.header {
+    border-bottom: 1px solid var(--gray-border-line);
+
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+
+    &__container {
+        @extend %container;
+
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__nav-panel {
+        display: flex;
+        align-items: center;
+        gap: 93px;
+}
+}
+
+
+

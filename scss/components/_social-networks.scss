@@ -1,0 +1,40 @@
+.social-network {
+    @extend %reset-list;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    &__link {
+        @extend %reset-link;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: var(--full-round);
+
+        fill: var(--gray-company-color);
+
+        transition: fill var(--animation-time), background-color var(--animation-time);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        background-color: var(--blue-color);
+        fill: var(--full-white-text);
+    }
+
+    &__link--color {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    &__icon--color {
+        fill: var(--full-white-text);
+    }
+}
+
+
+

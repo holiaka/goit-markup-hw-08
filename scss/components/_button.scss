@@ -1,0 +1,43 @@
+.button {
+    min-width: 200px;
+    border-radius: var(--radius);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+
+    border: none;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--full-white-text);
+
+    background-color: var(--blue-color);
+
+    cursor: pointer;
+
+    transition: background-color var(--animation-time);
+
+    &:hover,
+    &:focus {
+        background-color: var(--blue-accent-color);
+    }
+
+    &__icon {
+        margin-left: 10px;
+        fill: var(--full-white-text);
+    }
+}
+
+
+

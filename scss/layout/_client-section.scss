@@ -1,0 +1,46 @@
+/* Clients-list section */
+
+.client{
+@extend %section-padding;
+
+    &__container {
+        @extend %container;
+    }
+    
+    &__set{
+        @extend %reset-list;
+    }
+
+    &__set .card-item {
+        --card-numbers: 6;
+    }
+
+    &__link {
+        @extend %reset-link;
+
+        display: flex;
+        height: 92px;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid currentColor;
+        border-radius: var(--radius);
+        color: var(--gray-company-color);
+
+        transition: color var(--animation-time);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: var(--blue-color);
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
+
+
+
+
+

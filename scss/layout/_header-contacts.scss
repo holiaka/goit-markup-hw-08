@@ -1,0 +1,34 @@
+/* Header - contacts */
+.header-contact {
+    @extend %reset-list;
+
+    display: flex;
+    gap: 50px;
+    align-self: center;
+    margin-left: auto;
+
+    &__link {
+        @extend %reset-link;
+
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        padding-top: 32px;
+        padding-bottom: 32px;        
+        transition: color var(--animation-time);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: var(--blue-color);
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
+
+
+

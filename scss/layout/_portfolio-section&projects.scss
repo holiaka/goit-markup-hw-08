@@ -1,0 +1,86 @@
+// Portfolio spatial distribution
+
+.portfolio{
+    @extend %section-padding;
+    
+    &__container {
+        @extend %container;
+    }
+}
+
+
+// Portfolio projects set
+.portfolio-prj{
+    @extend %reset-list;
+
+    &__link {
+        @extend %reset-link;
+
+        display: block;
+        transition: box-shadow var(--animation-time);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &__thumb {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__overlay {
+        display: flex;
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+        transform: translateY(0%);
+        transition: transform var(--animation-time);
+
+        background-color: rgba(33, 150, 243, 0.9);
+    }
+
+    &__link:hover &__overlay,
+    &__link:focus &__overlay {
+        transform: translateY(-100%);
+    }
+
+    &__discr {
+        padding-left: 24px;
+        padding-right: 24px;
+        align-self: center;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.56;
+        color: var(--full-white-text);
+    }
+
+    &__text {
+        padding-top: 20px;
+        padding-right: 24px;
+        padding-bottom: 20px;
+        padding-left: 24px;
+
+        border-right: 1px solid var(--gray-border-line);
+        border-bottom: 1px solid var(--gray-border-line);
+        border-left: 1px solid var(--gray-border-line);
+    }
+
+    &__title {
+        margin-bottom: 4px;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2.0;
+        letter-spacing: 0.06em;
+        color: var(--gray-black-text);
+    }
+
+    &__direction {
+        font-size: 16px;
+        line-height: 1.88;
+    }
+}

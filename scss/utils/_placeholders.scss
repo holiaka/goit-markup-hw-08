@@ -1,0 +1,27 @@
+/* Conteiner for elements */
+
+%container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ***Sections padding */
+
+%section-padding {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+//  Reset primary features
+
+%reset-list {
+    list-style: none;
+}
+
+%reset-link {
+    text-decoration: none;
+    color: currentColor;
+}

@@ -1,0 +1,37 @@
+/* Variable */
+:root {
+    /* Text colors */
+    --full-black-text: #000000;
+    --full-white-text: #FFFFFF;
+    --nearby-white: #F5F4FA;
+    --gray-black-text: #212121;
+    --gray-text: #757575;
+
+    /* Universal blue color */
+    --blue-color: #2196F3;
+    --blue-accent-color: #188CE8;
+
+    /* Backgrounds colors */
+    --black-color-background: #2F303A;
+    --gray-background: #F5F4FA;
+
+    /* Line color */
+    --ligth-gray-line: #ECECEC;
+
+    /* Border line color */
+    --gray-border-line: #EEEEEE;
+    --gray-company-color: #AFB1B8;
+
+    /* Angle radius */
+    --radius: 4px;
+    --full-round: 50%;
+
+    /* Card gap`s distance */
+    --card-gap: 30px;
+
+    /* Number of cards in a row */
+    --card-numbers: 3;
+
+    /* Transition for :hover & :focus */
+    --animation-time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

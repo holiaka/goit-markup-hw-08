@@ -1,0 +1,53 @@
+/* Team section */
+
+.team {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--gray-background);
+
+    @extend %section-padding;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__content {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__list {
+        @extend %reset-list;
+        display: flex;
+    }
+
+
+    &__list .card-item {
+    --card-numbers: 4;
+    }
+
+    &__text {
+        padding: 30px;
+        text-align: center;    
+        background-color: var(--full-white-text);
+    }
+
+    &__name,
+    &__position {
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+    }
+
+    &__position {
+        margin-bottom: 16px;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+
+        font-weight: 500;
+        color: var(--gray-black-text);
+    }
+}

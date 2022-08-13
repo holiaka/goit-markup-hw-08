@@ -1,0 +1,35 @@
+.validation-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+
+    &--success {
+        fill: rgb(50, 136, 4);
+        opacity: 0;
+        transform: scale(0.4);
+        transform-origin: center;
+
+        transition: opacity var(--animation-time), transform var(--animation-time);
+    }
+
+    &--warning {
+        fill: rgb(160, 112, 0);
+        opacity: 0;
+        transform: scale(0.4);
+        transform-origin: center;
+
+        transition: opacity var(--animation-time), transform var(--animation-time);
+    }
+
+    .feedback-form__input:invalid:required:not(:placeholder-shown)~& &--warning {
+        opacity: 1;
+        transform: scale(1.0);
+    }
+
+    .feedback-form__input:valid:required:not(:placeholder-shown)~& &--success {
+        opacity: 1;
+        transform: scale(1.0);
+    }
+}
+

@@ -1,0 +1,13 @@
+/* Standard features */
+body {
+font-family: Roboto, sans-serif;
+font-size: 14px;
+color: var(--gray-text);
+line-height: 1.71;
+letter-spacing: 0.03em;
+}
+
+// Switching on when open feedback/windows form
+.no-scroll {
+    overflow: hidden;
+}
