@@ -1488,6 +1488,7 @@ Model windows and overlay
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 120px;
   border-radius: var(--radius);
   -webkit-box-align: center;
       -ms-flex-align: center;
