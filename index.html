@@ -77,7 +77,7 @@
             </div>
         </section>
 
-        <!--Job tasks-->
+        <!--Benefit tasks-->
         <section class="benefit">
 
             <div class="benefit__container">
@@ -142,23 +142,47 @@
                 <ul class="work__list card-set">
                     <li class="card-item">
                         <div class="work__thumb">
-                            <img src="./images/job-box/job-box-1.jpg" alt="Разработка программного продукта с нуля"
-                                width="370" height="294">
+                            <picture>
+                                <source srcset="
+                                ./images/job-box/job-box@1x.webp 1x,
+                                ./images/job-box/job-box@2x.webp 2x" media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="
+                                ./images/job-box/job-box@1x.jpg 1x,
+                                ./images/job-box/job-box@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg" />
+                                <img src="./images/job-box/job-box@1x.jpg" alt="Разработка программного продукта с нуля"
+                                    width="370" height="294" />
+                            </picture>
                             <p class="work__direction">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="card-item">
                         <div class="work__thumb">
-                            <img src="./images/job-box/job-box-2.jpg"
-                                alt="Макеты приложения для смартфонов. Разметка инструментов мобильного приложения"
-                                width="370" height="294">
+                            <picture>
+                                <source srcset="
+                                ./images/job-box/job-box@1x-1.webp 1x,
+                                ./images/job-box/job-box@2x-1.webp 2x" media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="
+                                ./images/job-box/job-box@1x-1.jpg 1x,
+                                ./images/job-box/job-box@2x-1.jpg 2x" media="(min-width: 1200px)" type="image/jpg" />
+                                <img src="./images/job-box/job-box@1x-1.jpg"
+                                    alt="РМакеты приложения для смартфонов. Разметка инструментов мобильного приложения"
+                                    width="370" height="294" />
+                            </picture>
                             <p class="work__direction">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="card-item">
                         <div class="work__thumb">
-                            <img src="./images/job-box/job-box-3.jpg" alt="Дизайнерские решения - Падбор цветной гаммы"
-                                width="370" height="294">
+                            <picture>
+                                <source srcset="
+                                ./images/job-box/job-box@1x-2.webp 1x,
+                                ./images/job-box/job-box@2x-2.webp 2x" media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="
+                                ./images/job-box/job-box@1x-2.jpg 1x,
+                                ./images/job-box/job-box@2x-2.jpg 2x" media="(min-width: 1200px)" type="image/jpg" />
+                                <img src="./images/job-box/job-box@1x-2.jpg"
+                                    alt="Дизайнерские решения - Падбор цветной гаммы" width="370" height="294" />
+                            </picture>
                             <p class="work__direction">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -178,8 +202,33 @@
                 <!--Person list-->
                 <ul class="team__list card-set">
                     <li class="team__content card-item">
-                        <img src="./images/command-person/person-1.jpg" alt="Фото Игоря Демьяненко" width="270"
-                            height="260">
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/command-person/person@1x-l.webp 1x,
+                                ./images/command-person/person@2x-l.webp 2x" type="image/webp" />
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/command-person/person@1x-l.jpg 1x,
+                                ./images/command-person/person@2x-l.jpg 2x" type="image/jpg" />
+
+                            <!-- Tab. screen -->
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/command-person/person@1x-md.webp 1x,
+                                ./images/command-person/person@2x-md.webp 2x" type="image/webp" />
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/command-person/person@1x-md.jpg 1x,
+                                ./images/command-person/person@2x-md.jpg 2x" type="image/jpg" />
+
+                            <!-- Mob. screen -->
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/command-person/person@1x-sm.webp 1x,
+                                ./images/command-person/person@2x-sm.webp 2x" type="image/webp" />
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/command-person/person@1x-sm.jpg 1x,
+                                ./images/command-person/person@2x-sm.jpg 2x" type="image/jpg" />
+                            <img src="./images/command-person/person@1x-sm.jpg" alt="Фото Игоря Демьяненко" width="450"
+                                height="622" />
+                        </picture>
                         <div class="team__text">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p class="team__position" lang="en">Product Designer</p>
@@ -220,8 +269,33 @@
                         </div>
                     </li>
                     <li class="team__content card-item">
-                        <img src="./images/command-person/person-2.jpg" alt="Фото Ольги Репеной" width="270"
-                            height="260">
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/command-person/person@1x-l-1.webp 1x,
+                                ./images/command-person/person@2x-l-1.webp 2x" type="image/webp" />
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/command-person/person@1x-l-1.jpg 1x,
+                                ./images/command-person/person@2x-l-1.jpg 2x" type="image/jpg" />
+
+                            <!-- Tab. screen -->
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/command-person/person@1x-md-1.webp 1x,
+                                ./images/command-person/person@2x-md-1.webp 2x" type="image/webp" />
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/command-person/person@1x-md-1.jpg 1x,
+                                ./images/command-person/person@2x-md-1.jpg 2x" type="image/jpg" />
+
+                            <!-- Mob. screen -->
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/command-person/person@1x-sm-1.webp 1x,
+                                ./images/command-person/person@2x-sm-1.webp 2x" type="image/webp" />
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/command-person/person@1x-sm-1.jpg 1x,
+                                ./images/command-person/person@2x-sm-1.jpg 2x" type="image/jpg" />
+                            <img src="./images/command-person/person@1x-sm-1.jpg" alt="Фото Ольги Репеной" width="450"
+                                height="622" />
+                        </picture>
                         <div class="team__text">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__position" lang="en">Frontend Developer</p>
@@ -262,8 +336,34 @@
                         </div>
                     </li>
                     <li class="team__content card-item">
-                        <img src="./images/command-person/person-3.jpg" alt="Фото Николая Тарасова" width="270"
-                            height="260">
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/command-person/person@1x-l-2.webp 1x,
+                                ./images/command-person/person@2x-l-2.webp 2x" type="image/webp" />
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/command-person/person@1x-l-2.jpg 1x,
+                                ./images/command-person/person@2x-l-2.jpg 2x" type="image/jpg" />
+
+                            <!-- Tab. screen -->
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/command-person/person@1x-md-2.webp 1x,
+                                ./images/command-person/person@2x-md-2.webp 2x" type="image/webp" />
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/command-person/person@1x-md-2.jpg 1x,
+                                ./images/command-person/person@2x-md-2.jpg 2x" type="image/jpg" />
+
+                            <!-- Mob. screen -->
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/command-person/person@1x-sm-2.webp 1x,
+                                ./images/command-person/person@2x-sm-2.webp 2x" type="image/webp" />
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/command-person/person@1x-sm-2.jpg 1x,
+                                ./images/command-person/person@2x-sm-2.jpg 2x" type="image/jpg" />
+                            <img src="./images/command-person/person@1x-sm-2.jpg" alt="Фото Николая Тарасова"
+                                width="450" height="622" />
+                        </picture>
+
                         <div class="team__text">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__position" lang="en">Marketing</p>
@@ -304,8 +404,34 @@
                         </div>
                     </li>
                     <li class="team__content card-item">
-                        <img src="./images/command-person/person-4.jpg" alt="Фото Михаила Ермакова" width="270"
-                            height="260">
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/command-person/person@1x-l-3.webp 1x,
+                                ./images/command-person/person@2x-l-3.webp 2x" type="image/webp" />
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/command-person/person@1x-l-3.jpg 1x,
+                                ./images/command-person/person@2x-l-3.jpg 2x" type="image/jpg" />
+
+                            <!-- Tab. screen -->
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/command-person/person@1x-md-3.webp 1x,
+                                ./images/command-person/person@2x-md-3.webp 2x" type="image/webp" />
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/command-person/person@1x-md-3.jpg 1x,
+                                ./images/command-person/person@2x-md-3.jpg 2x" type="image/jpg" />
+
+                            <!-- Mob. screen -->
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/command-person/person@1x-sm-3.webp 1x,
+                                ./images/command-person/person@2x-sm-3.webp 2x" type="image/webp" />
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/command-person/person@1x-sm-3.jpg 1x,
+                                ./images/command-person/person@2x-sm-3.jpg 2x" type="image/jpg" />
+                            <img src="./images/command-person/person@1x-sm-3.jpg" alt="Фото Михаила Ермакова"
+                                width="450" height="622" />
+                        </picture>
+
                         <div class="team__text">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__position" lang="en">UI Designer</p>
