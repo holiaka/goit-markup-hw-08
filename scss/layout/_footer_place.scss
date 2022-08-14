@@ -42,22 +42,13 @@
         display: flex;
         flex-direction: column;
         gap: 60px;
-        
 
         @include mq(tab) {
             flex-direction: row;
-        }
-
-        @include mq(tab) {
             display: flex;
             gap: 70px;
             align-items: baseline;
         }
-
-
-        display: flex;
-        gap: 70px;
-        align-items: baseline;
     }
 
     &__item{

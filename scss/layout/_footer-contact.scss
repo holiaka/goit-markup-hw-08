@@ -12,7 +12,7 @@
     &__item{
         text-align: center;
         @include mq(desk) {
-            text-align: right;
+            text-align: left;
         }
     }
 

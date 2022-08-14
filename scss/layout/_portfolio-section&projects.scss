@@ -1,86 +1,113 @@
 // Portfolio spatial distribution
 
-// .portfolio{
-//     @extend %section-padding;
+.portfolio{
+    @extend %section-padding;
+
+    @include mq(desk) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     
-//     &__container {
-//         @extend %container;
-//     }
-// }
+    &__container {
+        @extend %container;
+
+        @include mq(mob) {
+            max-width: 480px;
+        }
+
+        @include mq(tab) {
+            max-width: 768px;
+        }
+        
+        @include mq(desk) {
+            max-width: 1200px;
+        }
+    }
+}
 
 
-// // Portfolio projects set
-// .portfolio-prj{
-//     @extend %reset-list;
+// Portfolio projects set
+.portfolio-prj{
+    @extend %reset-list;
 
-//     &__link {
-//         @extend %reset-link;
+    & .card-item {        
+        @include mq(tab) {
+            --card-numbers: 2;
+        }
+        
+        @include mq(desk) {
+            --card-numbers: 3;
+        }
+    }
 
-//         display: block;
-//         transition: box-shadow var(--animation-time);
-//     }
+    &__link {
+        @extend %reset-link;
 
-//     &__link:hover,
-//     &__link:focus {
-//         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-//     }
+        display: block;
+        transition: box-shadow var(--animation-time);
+    }
 
-//     &__thumb {
-//         position: relative;
-//         overflow: hidden;
-//     }
+    &__link:hover,
+    &__link:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 
-//     &__overlay {
-//         display: flex;
-//         position: absolute;
+    &__thumb {
+        position: relative;
+        overflow: hidden;
+    }
 
-//         width: 100%;
-//         height: 100%;
-//         transform: translateY(0%);
-//         transition: transform var(--animation-time);
+    &__overlay {
+        display: flex;
+        position: absolute;
 
-//         background-color: rgba(33, 150, 243, 0.9);
-//     }
+        width: 100%;
+        height: 100%;
+        transform: translateY(0%);
+        transition: transform var(--animation-time);
 
-//     &__link:hover &__overlay,
-//     &__link:focus &__overlay {
-//         transform: translateY(-100%);
-//     }
+        background-color: rgba(33, 150, 243, 0.9);
+    }
 
-//     &__discr {
-//         padding-left: 24px;
-//         padding-right: 24px;
-//         align-self: center;
+    &__link:hover &__overlay,
+    &__link:focus &__overlay {
+        transform: translateY(-100%);
+    }
 
-//         font-weight: 400;
-//         font-size: 18px;
-//         line-height: 1.56;
-//         color: var(--full-white-text);
-//     }
+    &__discr {
+        padding-left: 24px;
+        padding-right: 24px;
+        align-self: center;
 
-//     &__text {
-//         padding-top: 20px;
-//         padding-right: 24px;
-//         padding-bottom: 20px;
-//         padding-left: 24px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.56;
+        color: var(--full-white-text);
+    }
 
-//         border-right: 1px solid var(--gray-border-line);
-//         border-bottom: 1px solid var(--gray-border-line);
-//         border-left: 1px solid var(--gray-border-line);
-//     }
+    &__text {
+        padding-top: 20px;
+        padding-right: 24px;
+        padding-bottom: 20px;
+        padding-left: 24px;
 
-//     &__title {
-//         margin-bottom: 4px;
+        border-right: 1px solid var(--gray-border-line);
+        border-bottom: 1px solid var(--gray-border-line);
+        border-left: 1px solid var(--gray-border-line);
+    }
 
-//         font-weight: 700;
-//         font-size: 18px;
-//         line-height: 2.0;
-//         letter-spacing: 0.06em;
-//         color: var(--gray-black-text);
-//     }
+    &__title {
+        margin-bottom: 4px;
 
-//     &__direction {
-//         font-size: 16px;
-//         line-height: 1.88;
-//     }
-// }
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2.0;
+        letter-spacing: 0.06em;
+        color: var(--gray-black-text);
+    }
+
+    &__direction {
+        font-size: 16px;
+        line-height: 1.88;
+    }
+}

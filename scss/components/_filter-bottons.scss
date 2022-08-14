@@ -3,9 +3,20 @@
     @extend %reset-list;
 
     display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: left;
+    column-gap: 8px;
+    row-gap: 15px;
+    margin-bottom: 30px;
+
+        @include mq(tab) {
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+        
+        @include mq(desk) {
+            margin-bottom: 50px;
+        }
 
     /* Filtration buttons for portfolio */
     &__button {

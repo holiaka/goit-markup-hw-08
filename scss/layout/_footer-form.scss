@@ -9,6 +9,8 @@
     }
 
     &__input {
+        width: 90vw;
+
         height: 50px;
         padding: 15px 16px;
         background-color: transparent;
@@ -18,8 +20,8 @@
         color: var(--full-white-text);
         cursor: pointer;
 
-        @include mq(mob) {
-            width: 320px;
+        @media (min-width: 500px) {
+            width: 450px;
         }
         
         @include mq(tab) {
