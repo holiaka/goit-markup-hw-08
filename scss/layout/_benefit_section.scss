@@ -1,46 +1,73 @@
 /* Benefit section */
 
-// .benefit{
-//     @extend %section-padding;
+.benefit{
+    @extend %section-padding;
 
-//     &__container{
-//         @extend %container;
-//     }
+    &__container{
+        @extend %container;
 
-//     &__list{
-//         @extend %reset-list;
-//     }
+        @include mq(mob) {
+            max-width: 480px;
+        }
 
-//     &__list .card-item {
-//         --card-numbers: 4;
-//     }
+        @include mq(tab) {
+            max-width: 768px;
+        }
+        
+        @include mq(desk) {
+            max-width: 1200px;
+        }
+    }
 
-//     &__img-space {
-//         display: flex;
-//         height: 120px;
-//         border-radius: var(--radius);
-//         align-items: center;
-//         justify-content: center;
+    &__list{
+        @extend %reset-list;
+    }
 
-//         background-color: var(--gray-background);
+    &__list .card-item {
+        @include mq(mob) {
+            --card-numbers: 1;
+        }
 
-//         margin-bottom: 30px;
-//     }
+        @include mq(tab) {
+            --card-numbers: 2;
+        }
+        
+        @include mq(desk) {
+            --card-numbers: 4;
+        } 
 
-//     &__icon {
-//         width: 70px;
-//         height: 70px;
-//     }
+    }
 
-//     &__title {
-//         margin-bottom: 10px;
+    &__img-space {
+        display: flex;
+        height: 120px;
+        border-radius: var(--radius);
+        align-items: center;
+        justify-content: center;
 
-//         font-weight: 700;
-//         font-size: 14px;
-//         line-height: 1.14;
-//         text-transform: uppercase;
-//         color: var(--gray-black-text)
-//     }
-// }
+        background-color: var(--gray-background);
+
+        margin-bottom: 30px;
+    }
+
+    &__icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--gray-black-text);
+
+        @include mq(only_mob) {
+            text-align: center;
+        }
+    }
+}
 
 
