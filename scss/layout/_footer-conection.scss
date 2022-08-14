@@ -1,10 +1,16 @@
-// .footer-conection {
-//     &__text {
-//     font-weight: 700;
-//     line-height: calc(16 / 14);
-//     text-transform: uppercase;
+.footer-conection {
+    &__text {
+    text-align: center;
 
-//     color: var(--full-white-text);
-//     margin-bottom: 20px;
-//     }
-// }
+    @include mq(desk) {
+        text-align: left;
+    }
+
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+
+    color: var(--full-white-text);
+    margin-bottom: 20px;
+    }
+}

@@ -3,6 +3,11 @@
 .benefit{
     @extend %section-padding;
 
+    @include mq(desk) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
     &__container{
         @extend %container;
 
@@ -39,8 +44,7 @@
     }
 
     &__img-space {
-        display: flex;
-        height: 120px;
+        display: flex;        
         border-radius: var(--radius);
         align-items: center;
         justify-content: center;

@@ -1,51 +1,56 @@
-// .modal-form {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%) scale(1) rotate(0deg);
+.modal-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
 
-//     width: 528px;
-//     height: 581px;
-//     padding: 40px;
+    width: 450px;
+    height: 609px;
+    padding: 40px;
 
-//     background-color: var(--full-white-text);
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-//     border-radius: var(--radius);
+    @include mq(desk) {
+        width: 528px;
+        height: 581px;
+    }
 
-//     transition: opacity var(--animation-time), transform var(--animation-time);
+    background-color: var(--full-white-text);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius);
 
-//     .backdrop.is-hidden & {
-//         opacity: 0;
-//         transform: translate(50px, 200px) scale(1.3) rotate(45deg);
-//     }
+    transition: opacity var(--animation-time), transform var(--animation-time);
 
-//     &__close-btn {
-//         position: absolute;
-//         top: 8px;
-//         right: 8px;
+    .backdrop.is-hidden & {
+        opacity: 0;
+        transform: translate(50px, 200px) scale(1.3) rotate(45deg);
+    }
 
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
+    &__close-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
 
-//         width: 30px;
-//         height: 30px;
-//         border-radius: 50%;
-//         border: 1px solid rgba(0, 0, 0, 0.1);
-//         background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-//         cursor: pointer;
-//     }
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: transparent;
 
-//     &__close-btn:hover &__close-icon,
-//     &__close-btn:focus &__close-icon {
-//         fill: var(--blue-color);
-//     }
+        cursor: pointer;
+    }
 
-//     &__close-icon {
-//         fill: var(--full-black-text);
+    &__close-btn:hover &__close-icon,
+    &__close-btn:focus &__close-icon {
+        fill: var(--blue-color);
+    }
 
-//         transition: fill var(--animation-time);
-//     }
-// }
+    &__close-icon {
+        fill: var(--full-black-text);
+
+        transition: fill var(--animation-time);
+    }
+}
 

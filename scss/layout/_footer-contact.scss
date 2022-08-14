@@ -1,43 +1,57 @@
-// .footer-contact {
-//     @extend %reset-list;
-//     font-style: normal;
+.footer-contact {
+    @extend %reset-list;
 
-//     &__data{
-//         @extend %reset-list;
-//     }
+    font-style: normal;
+    
 
-//     &__item:not(:last-child) {
-//         display: block;
-//         margin-bottom: 9px;
-//     }
+    &__data{
+        @extend %reset-list;
+        display:block;
+    }
 
-//     &__link {
-//         @extend %reset-link;
+    &__item{
+        text-align: center;
+        @include mq(desk) {
+            text-align: right;
+        }
+    }
 
-//         padding: 5px 0;
-//         color: var(--full-white-text);
-//         transition: color var(--animation-time);
-//     }
+    &__item:not(:last-child) {
+        display: block;
+        margin-bottom: 8px;
 
-//     &__link:hover,
-//     &__link:focus {
-//         color: var(--gray-text);
-//     }
+        @include mq(desk) {
+            margin-bottom: 9px;;
+        }    
+    }   
 
-//     &__link--color {
-//         @extend %reset-link;
-//         padding: 5px 0;
-//         color: rgba(255, 255, 255, 0.6);
+    &__link {
+        @extend %reset-link;
 
-//         transition: color var(--animation-time);
-//     }
+        padding: 5px 0;
+        color: var(--full-white-text);
+        transition: color var(--animation-time);
+    }
 
-//     &__link--color:hover,
-//     &__link--color:focus {
-//         color: var(--full-white-text);
-//     }
+    &__link:hover,
+    &__link:focus {
+        color: var(--gray-text);
+    }
 
-// }
+    &__link--color {
+        @extend %reset-link;
+        padding: 5px 0;
+        color: rgba(255, 255, 255, 0.6);
+
+        transition: color var(--animation-time);
+    }
+
+    &__link--color:hover,
+    &__link--color:focus {
+        color: var(--full-white-text);
+    }
+
+}
 
 
 

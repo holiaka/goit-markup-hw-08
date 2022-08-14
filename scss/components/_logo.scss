@@ -34,22 +34,22 @@
         color: var(--blue-color);
     }
 
-//     &--location {
-//         display: inline-block;    
-//         margin-bottom: 20px;
-//         padding-top: 0;
-//         padding-bottom: 0;
-//     }
+    &--location {
+        display: inline-block;    
+        margin-bottom: 20px;
+        padding-top: 0;
+        padding-bottom: 0;        
+    }
     
-//     &__text--color {
-//         color: var(--full-white-text);    
-//         transition: color var(--animation-time);
-//     }
+    &__text--color {
+        color: var(--full-white-text);    
+        transition: color var(--animation-time);
+    }
     
-//     &__text--color:hover,
-//     &__text--color:focus {
-//         color: var(--blue-color);
-//     }
+    &__text--color:hover,
+    &__text--color:focus {
+        color: var(--blue-color);
+    }
 }
 
 
