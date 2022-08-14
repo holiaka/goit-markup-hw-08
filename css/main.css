@@ -277,6 +277,50 @@ img {
   color: var(--blue-color);
 }
 
+.button {
+  min-width: 200px;
+  border-radius: var(--radius);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--full-white-text);
+  background-color: var(--blue-color);
+  cursor: pointer;
+  -webkit-transition: background-color var(--animation-time);
+  transition: background-color var(--animation-time);
+}
+@media screen and (min-width: 480px) {
+  .button {
+    min-width: 200px;
+  }
+}
+.button:hover, .button:focus {
+  background-color: var(--blue-accent-color);
+}
+.button__icon {
+  margin-left: 10px;
+  fill: var(--full-white-text);
+}
+
 /* 
 ************************
 Model windows and overlay 
@@ -623,4 +667,54 @@ Model windows and overlay
   fill: currentColor;
 }
 
-/* Footer part (divade) */ /* Hero section */ /* Benefit section */ /* Team section */ /* Clients-list section *//*# sourceMappingURL=main.css.map */
+/* Footer part (divade) */ /* Hero section */
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg/hero-bg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg/hero-bg.jpg);
+  background-color: #C4C4C4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+.hero__title {
+  max-width: 360px;
+  font-size: 26px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  font-weight: 900;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--full-white-text);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+  }
+}
+
+/* Benefit section */ /* Team section */ /* Clients-list section *//*# sourceMappingURL=main.css.map */
