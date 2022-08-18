@@ -171,7 +171,7 @@ summary {
 }
 
 /* Conteiner for elements */
-.portfolio__container, .client__container, .team__container, .work__container, .benefit__container, .footer__container, .header__container, .mob-nav__container {
+.portfolio__container, .client__container, .team__container, .work__container, .benefit__container, .footer__container, .header__container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -446,8 +446,9 @@ Model windows and overlay
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1) rotate(0deg);
           transform: translate(-50%, -50%) scale(1) rotate(0deg);
-  width: 450px;
-  height: 609px;
+  -ms-flex-preferred-size: calc(100vw - 30px);
+      flex-basis: calc(100vw - 30px);
+  height: 581px;
   padding: 40px;
   background-color: var(--full-white-text);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -457,6 +458,12 @@ Model windows and overlay
   transition: opacity var(--animation-time), -webkit-transform var(--animation-time);
   transition: opacity var(--animation-time), transform var(--animation-time);
   transition: opacity var(--animation-time), transform var(--animation-time), -webkit-transform var(--animation-time);
+}
+@media screen and (min-width: 768px) {
+  .modal-form {
+    width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-form {
@@ -805,6 +812,17 @@ Model windows and overlay
 }
 
 .mob-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -837,30 +855,6 @@ Model windows and overlay
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-.mob-nav__container {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 100%;
-}
-@media screen and (min-width: 480px) {
-  .mob-nav__container {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .mob-nav__container {
-    max-width: 768px;
-  }
-}
 .mob-nav__menu-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -872,8 +866,8 @@ Model windows and overlay
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: -46px;
-  right: -25px;
+  top: 10px;
+  right: 15px;
   width: 40px;
   height: 60px;
   background-color: transparent;
@@ -904,7 +898,7 @@ Model windows and overlay
   letter-spacing: 0.02em;
   color: var(--gray-black-text);
 }
-.mob-nav__link:hover, .mob-nav__link:focus {
+.mob-nav__link:hover, .mob-nav__link:focus, .mob-nav__link--active {
   color: var(--blue-color);
 }
 .mob-nav__wrap {
@@ -923,6 +917,7 @@ Model windows and overlay
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 10px;
 }
 .mob-nav__soc-link {
   font-weight: 500;
@@ -970,6 +965,9 @@ Model windows and overlay
 
 /* Navigation panel */
 .header {
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
   border-bottom: 1px solid var(--gray-border-line);
 }
 .header__container {
@@ -1033,6 +1031,7 @@ Model windows and overlay
   padding-top: 10px;
   padding-bottom: 10px;
   width: 40px;
+  height: 40px;
   background-color: transparent;
   border-color: transparent;
 }
@@ -1136,6 +1135,7 @@ Model windows and overlay
     display: -ms-flexbox;
     display: flex;
     gap: 8px;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1143,6 +1143,7 @@ Model windows and overlay
     gap: 10px;
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
   }
 }
 .header-contact__link:hover, .header-contact__link:focus {
@@ -1392,16 +1393,6 @@ Model windows and overlay
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg/hero-bg@1x-sm.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg/hero-bg@1x-sm.jpg);
 }
-@media screen and (min-width: 480px) {
-  .hero {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    max-width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
@@ -1411,27 +1402,32 @@ Model windows and overlay
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero-bg/hero-bg@2x-sm.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg/hero-bg@2x-sm.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg/hero-bg@2x-sm.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../images/hero-bg/hero-bg@1x-m.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg/hero-bg@1x-m.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg/hero-bg@1x-m.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero-bg/hero-bg@2x-m.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg/hero-bg@2x-m.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg/hero-bg@2x-m.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(../images/hero-bg/hero-bg@1x-l.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg/hero-bg@1x-l.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg/hero-bg@1x-l.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero-bg/hero-bg@2x-l.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg/hero-bg@2x-l.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg/hero-bg@2x-l.jpg);
   }
 }
 .hero__title {

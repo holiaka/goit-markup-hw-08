@@ -4,9 +4,14 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(0deg);
 
-    width: 450px;
-    height: 609px;
+    flex-basis: calc(100vw - 30px);
+    height: 581px;
     padding: 40px;
+
+    @include mq(tab) {
+        width: 450px;
+        height: 609px;
+    }
 
     @include mq(desk) {
         width: 528px;

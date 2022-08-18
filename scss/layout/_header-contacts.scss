@@ -29,12 +29,14 @@
         @include mq(tab) {
             display: flex;
             gap: 8px;
+            font-size: 12px;
         }      
 
         @include mq(desk) {
             gap: 10px;
             padding-top: 32px;
             padding-bottom: 32px;
+            font-size: 14px;
         }   
     }
 
