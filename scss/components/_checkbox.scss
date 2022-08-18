@@ -12,7 +12,6 @@
     &__disc {
         user-select: none;
         font-size: 12px;
-
         @include mq(desk) {
             font-size: 14px;
         }
@@ -29,6 +28,10 @@
     &__disc-link:hover,
     &__disc-link:focus {
         color: --blue-accent-color;
+    }
+
+    &__icon{
+        align-self: flex-start;
     }
 
 

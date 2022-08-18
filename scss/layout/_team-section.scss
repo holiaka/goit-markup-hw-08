@@ -6,27 +6,10 @@
     margin-right: auto;
     background-color: var(--gray-background);
 
-    @extend %section-padding;
-
-    @include mq(desk) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
+    @extend %section-padding; 
 
     &__container {
         @extend %container;
-
-        @include mq(mob) {
-            max-width: 480px;
-        }
-
-        @include mq(tab) {
-            max-width: 768px;
-        }
-        
-        @include mq(desk) {
-            max-width: 1200px;
-        }
     }
 
     &__content {

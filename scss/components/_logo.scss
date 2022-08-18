@@ -4,7 +4,7 @@
     font-weight: 700;
     font-size: 24px;
     color: var(--blue-color);
-    line-height: 1.19;
+    line-height: calc(28 / 24);
     text-decoration: none;
 
     @include mq(only_mob) {
