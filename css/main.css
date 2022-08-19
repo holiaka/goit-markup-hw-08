@@ -867,10 +867,16 @@ Model windows and overlay
   z-index: 1;
   -webkit-transform: translate(100%, 0);
           transform: translate(100%, 0);
-  -webkit-transition: opaciti var(--animation-time), visibility var(--animation-time), -webkit-transform var(--animation-time);
-  transition: opaciti var(--animation-time), visibility var(--animation-time), -webkit-transform var(--animation-time);
-  transition: opaciti var(--animation-time), visibility var(--animation-time), transform var(--animation-time);
-  transition: opaciti var(--animation-time), visibility var(--animation-time), transform var(--animation-time), -webkit-transform var(--animation-time);
+  -webkit-transition: opacity var(--animation-time), visibility var(--animation-time), -webkit-transform var(--animation-time);
+  transition: opacity var(--animation-time), visibility var(--animation-time), -webkit-transform var(--animation-time);
+  transition: opacity var(--animation-time), visibility var(--animation-time), transform var(--animation-time);
+  transition: opacity var(--animation-time), visibility var(--animation-time), transform var(--animation-time), -webkit-transform var(--animation-time);
+}
+@media screen and (max-height: 580px) {
+  .mob-nav {
+    height: 100%;
+    overflow: auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .mob-nav {
@@ -912,6 +918,9 @@ Model windows and overlay
 }
 .mob-nav__menu-btn--active {
   fill: currentColor;
+}
+.mob-nav__list {
+  margin-bottom: 64px;
 }
 .mob-nav__item {
   margin-bottom: 32px;
